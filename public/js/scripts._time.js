@@ -6,15 +6,18 @@ function time_api() {
     .then((response) => response.json())
     .then((data) => {
       const time = new Date(data.datetime);
-      const options = {
-        hour: "numeric",
-        minute: "numeric",
-        //second: "numeric",
-        timeZoneName: "short",
-      };
-      const formattedTime = time.toLocaleString("en-US", options);
-      document.getElementById("time").textContent = formattedTime;
-      setTimeout(time_api, 2000);
+      if(!data.hasOwnProperty("error"))
+      {
+        const options = {
+          hour: "numeric",
+          minute: "numeric",
+          //second: "numeric",
+          timeZoneName: "short",
+        };
+        const formattedTime = time.toLocaleString("en-US", options);
+        document.getElementById("time").textContent = formattedTime;
+      }
+      setTimeout(time_api, 1000);
     })
     .catch((error) => console.error(error));
 }
