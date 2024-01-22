@@ -17,7 +17,7 @@ function time_api() {
         const formattedTime = time.toLocaleString("en-US", options);
         document.getElementById("time").textContent = formattedTime;
       }
-      setTimeout(time_api, 1000);
+      setTimeout(time_api, 10000);
     })
     .catch((error) => console.error(error));
 }
