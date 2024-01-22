@@ -1,4 +1,4 @@
-const API_KEY = "a532733febc143feb306567cce782947";
+const API_KEY = "1274a24bdaec41089f894b30e19942b6";
 const URL = `https://timezone.abstractapi.com/v1/current_time/?api_key=${API_KEY}&location=Montreal`;
 
 function time_api() {
