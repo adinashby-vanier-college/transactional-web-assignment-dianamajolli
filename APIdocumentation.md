@@ -13,7 +13,7 @@ Endpoints
 - Body: 
     ```json
     {
-      "Linkedin": "https://www.linkedin.com/in/diana-majolli-andre-855851bb/",
+      "Linkedin": "https://www.linkedin.com/in/diana-majolli-andre/",
       "GitHub": "https://github.com/dianamajolli"
     }
     ```

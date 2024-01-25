@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/contactcard', async (req,res) => {
-    var contactCard = { Linkedin:"https://www.linkedin.com/in/diana-majolli-andre-855851bb/", GitHub:"https://github.com/dianamajolli" };
+    var contactCard = { Linkedin:"https://www.linkedin.com/in/diana-majolli-andre/", GitHub:"https://github.com/dianamajolli" };
     res.json(contactCard);
 })
 
